@@ -87,10 +87,7 @@ public class TouchscreenGestureSettings extends PreferenceActivity {
     protected void onResume() {
         super.onResume();
 
-        // If running on a phone, remove padding around the listview
-        if (!DeviceUtils.isTablet(this)) {
-            getListView().setPadding(0, 0, 0, 0);
-        }
+        getListView().setPadding(0, 0, 0, 0);
 
         if (mNotificationManager.isNotificationPolicyAccessGranted() && mFlipClick) {
             mFlipPref.setChecked(true);

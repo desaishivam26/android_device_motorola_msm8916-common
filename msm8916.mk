@@ -80,9 +80,9 @@ PRODUCT_PACKAGES += \
     libbson \
     Snap
 
-# CMActions
+# Actions
 PRODUCT_PACKAGES += \
-    CMActions
+    Actions
 
 # Display
 PRODUCT_PACKAGES += \
